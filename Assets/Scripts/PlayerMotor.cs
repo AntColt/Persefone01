@@ -56,6 +56,10 @@ public class PlayerMotor : MonoBehaviour {
         {
             Jump();
         }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Jump();
+        }
 
     }
 

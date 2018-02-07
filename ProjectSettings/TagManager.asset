@@ -5,8 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+<<<<<<< HEAD
   - SpikeTrap
   - Checkpoint
+=======
+  - Walltrigger
+  - Doll
+  - Checkpoint
+  - SpikeTrap
+  - DeathWall
+>>>>>>> d8f9f4fd4ce7493e9c00d2353d5395722d60a30a
   layers:
   - Default
   - TransparentFX
