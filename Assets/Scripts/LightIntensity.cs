@@ -11,18 +11,16 @@ public class LightIntensity : MonoBehaviour {
     [SerializeField] float maxLightRange;
     void Start()
     {
-        /*lightIntensity = 2;
-        lightRange = 10;
-        lightRemoved = 0.5f;
-        maxLightRange = 100f;*/
         lightRange = maxLightRange;
     }
     void Update()
     {
+
         if(lightRange > 0)
         {
             lightRange -= lightRemoved * Time.deltaTime;
         }
+
         //lt.intensity = lightIntensity;
         lightLantern.range = lightRange;
         if(lightRange > maxLightRange)
@@ -48,6 +46,10 @@ public class LightIntensity : MonoBehaviour {
     public float GetLightRange()
     {
         return lightRange;
+    }
+    public void SetLightRange(float takeLight)
+    {
+        lightRange -= takeLight;
     }
     public float GetMaxLightRange()
     {

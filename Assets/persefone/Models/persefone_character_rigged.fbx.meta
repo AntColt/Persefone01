@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: ef814e4c9e5463b47ab7a1819429f0ee
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: cape1_jnt_Bind
+    100002: cape2_jnt_Bind
+    100004: cape3_jnt_Bind
+    100006: Character2
+    100008: chest_jnt_Bind
+    100010: head_jnt_Bind
+    100012: L_ball_jnt_Bind
+    100014: L_elbow_jnt_Bind
+    100016: L_foot_jnt_Bind
+    100018: L_hand_jnt_Bind
+    100020: L_hip_jnt_Bind
+    100022: L_knee_jnt_Bind
+    100024: L_shoulder_jnt_Bind
+    100026: L_toe_jnt_Bind
+    100028: pelvis_jnt_Bind
+    100030: //RootNode
+    100032: R_ball_jnt_Bind
+    100034: R_elbow_jnt_Bind
+    100036: R_foot_jnt_Bind
+    100038: R_hand_jnt_Bind
+    100040: R_hip_jnt_Bind
+    100042: R_knee_jnt_Bind
+    100044: R_shoulder_jnt_Bind
+    100046: R_toe_jnt_Bind
+    100048: Root_jnt
+    100050: spine_jnt_Bind
+    400000: cape1_jnt_Bind
+    400002: cape2_jnt_Bind
+    400004: cape3_jnt_Bind
+    400006: Character2
+    400008: chest_jnt_Bind
+    400010: head_jnt_Bind
+    400012: L_ball_jnt_Bind
+    400014: L_elbow_jnt_Bind
+    400016: L_foot_jnt_Bind
+    400018: L_hand_jnt_Bind
+    400020: L_hip_jnt_Bind
+    400022: L_knee_jnt_Bind
+    400024: L_shoulder_jnt_Bind
+    400026: L_toe_jnt_Bind
+    400028: pelvis_jnt_Bind
+    400030: //RootNode
+    400032: R_ball_jnt_Bind
+    400034: R_elbow_jnt_Bind
+    400036: R_foot_jnt_Bind
+    400038: R_hand_jnt_Bind
+    400040: R_hip_jnt_Bind
+    400042: R_knee_jnt_Bind
+    400044: R_shoulder_jnt_Bind
+    400046: R_toe_jnt_Bind
+    400048: Root_jnt
+    400050: spine_jnt_Bind
+    2100000: lambert5
+    4300000: Character2
+    9500000: //RootNode
+    13700000: Character2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 7eb1a6d1d9f3ef748a52f763de18fbd1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Root_jnt
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,7 +8,7 @@ public class PlayerMotor : MonoBehaviour {
     MeshRenderer meshRenderer;
 
     enum JumpState { NONE, JUMP, DOUBLEJUMP }
-    [SerializeField ] JumpState currentJumpState = JumpState.NONE;
+    [SerializeField] JumpState currentJumpState = JumpState.NONE;
 
     private Rigidbody rigidBody;
     private BoxCollider boxCollider;
@@ -29,16 +29,24 @@ public class PlayerMotor : MonoBehaviour {
             isGrounded = value;
         }
     }
+    public bool GetIsGrounded()
+    {
+        return IsGrounded;
+    }
+    public float GetVerticalVelocity()
+    {
+        return VerticalVelocity;
+    }
 
     private float gravity = 12.0f;
     private float jumpForce = 6.5f;
     [SerializeField] private float jumper = 0f;
     [SerializeField] private int allowedJumps = 1;
+    bool isFacingRight = true;
 
     //bools
-   
 
-	void Start () {
+    void Start () {
         meshRenderer = GetComponent<MeshRenderer>();
         rigidBody = GetComponent<Rigidbody>();
         boxCollider = GetComponent<BoxCollider>();
@@ -67,19 +75,37 @@ public class PlayerMotor : MonoBehaviour {
     {
         float jumpForgiveness = 2;
         VerticalVelocity -= gravity * Time.deltaTime;
-        Debug.Log((gravity * Time.deltaTime));
+        //Debug.Log((gravity * Time.deltaTime));
         if (verticalVelocity < -(gravity * Time.deltaTime * jumpForgiveness))
         {
             IsGrounded = false;
         }
     }
-
+    Vector3 moveVector;
     private void FixedUpdate()
     {
-        Vector3 moveVector = Vector3.zero;
+        moveVector = Vector3.zero;
         moveVector.x = Input.GetAxis("Horizontal") * 4.0f;
         moveVector.y = VerticalVelocity;
         rigidBody.velocity = moveVector;
+
+        if(moveVector.x > 0)
+        {
+            isFacingRight = true;
+        }
+        else if(moveVector.x < 0)
+        {
+            isFacingRight = false;
+        }
+
+    }
+    public bool GetIsFacingRight()
+    {
+        return isFacingRight;
+    }
+    public float GetMoveVector()
+    {
+        return moveVector.x;
     }
 
     void Jump()
